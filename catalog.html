@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sedona. Каталог</title>
+</head>
+<body>
+    <header class="main-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <div class="logo">
+              <a href="index.html">
+              <img src="http://placehold.it/150x100">
+              </a>
+            </div>  
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div class="catalog-choice">
+      <div class="filter-group">
+        <form class="condition-choice" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="sub-title">Инфраструктура:</h2>
+        <input type="checkbox" name="infrastructure" value="swimming pool" id="swimm" checked>
+          <label for="swimm">Бассейн</label>
+        <input type="checkbox" name="infrastructure" value="parking" id="park">
+          <label for="park">Парковка</label>
+        <input type="checkbox" name="infrastructure" value="Wi-Fi" id="connection">
+          <label for="connection">Wi-Fi</label>
+        <h2 class="sub-title">Тип жилья:</h2>
+        <input type="checkbox" name="infrastructure" value="hotel" id="hotel" checked>
+          <label for="hotel">Гостиница</label>
+        <input type="checkbox" name="infrastructure" value="motel" id="motel" checked>
+          <label for="motel">Мотель</label> 
+        <input type="checkbox" name="infrastructure" value="apartments" id="apartment" checked>
+          <label for="apartment">Аппартаменты</label>
+        </form>
+      </div>
+      <div class="price-choice">
+        <form class="condition-choice" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="sub-title">Стоимость в сутки (р):</h2>
+          <span class="price-choice-value">
+              <span>от 0</span>
+              <span>до 3000</span>     
+          </span>
+          <input type="range" min="0" max="3000" step="100">
+          <button type="submit" class="btn-choice">Показать</button>
+        </form>
+      </div>
+    </div>
+    <div class="search-results">
+      <h3>Найдено: 3</h3>
+      <span>Сортировка</span>
+      <ul>
+        <li>По цене</li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По рейтингу</a></li>
+      </ul>
+      <div class="arrows">
+        <img src="http://placehold.it/150x100">
+        <a href="#">
+          <img src="http://placehold.it/150x100">
+        </a>
+      </div>
+    </div>
+    <div class="dwelling">
+      <img src="http://placehold.it/150x100">
+      <h3 class="reason">Amara Resort & SPA</h3>
+      <span class="description">Гостиница</span>
+      <span class="description">от 3500 р.</span>
+      <a href="#" class="more">Подробнее</a>
+      <a href="#" class="reserve">Забронировать</a>
+      <span class="stars"><!-- Пока не представляю, как лучше оформить звёзды --></span>
+      <span class="rating">Рейтинг: 8,5</span>
+    </div>
+    <div class="dwelling">
+      <img src="http://placehold.it/150x100">
+      <h3 class="reason">Desert Quail Inn</h3>
+      <span class="description">Мотель</span>
+      <span class="description">от 2000 р.</span>
+      <a href="#" class="more">Подробнее</a>
+      <a href="#" class="reserve">Забронировать</a>
+      <span class="stars"><!-- Пока не представляю, как лучше оформить звёзды --></span>
+      <span class="rating">Рейтинг: 8,9</span>
+    </div>
+    <div class="dwelling">
+      <img src="http://placehold.it/150x100">
+      <h3 class="reason">Villas at Poco Diablo</h3>
+      <span class="description">Апартаменты</span>
+      <span class="description">от 4000 р.</span>
+      <a href="#" class="more">Подробнее</a>
+      <a href="#" class="reserve">Забронировать</a>
+      <span class="stars"><!-- Пока не представляю, как лучше оформить звёзды --></span>
+      <span class="rating">Рейтинг: 9,2</span>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <section class="footer-contacts">
+        #visitsedona
+      </section>
+      <section class="footer-social">
+        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-yt" href="#">Youtube</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
