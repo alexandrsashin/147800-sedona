@@ -33,7 +33,7 @@
   <main>
       <form class="condition-choice" action="https://echo.htmlacademy.ru" method="post">
         <div class="filter-group">
-          <div>Инфраструктура:</div>
+          <div class="filter-title">Инфраструктура:</div>
           <input type="checkbox" name="infrastructure" value="swimming pool" id="swimm" checked>
             <label for="swimm">Бассейн</label>
           <input type="checkbox" name="infrastructure" value="parking" id="park">
@@ -42,7 +42,7 @@
             <label for="connection">Wi-Fi</label>
         </div>
         <div class="filter-group">
-          <div>Тип жилья:</div>
+          <div class="filter-title">Тип жилья:</div>
           <input type="checkbox" name="infrastructure" value="hotel" id="hotel" checked>
             <label for="hotel">Гостиница</label>
           <input type="checkbox" name="infrastructure" value="motel" id="motel" checked>
@@ -51,7 +51,7 @@
             <label for="apartment">Аппартаменты</label>
         </div>
         <div class="cost">
-          <div>Стоимость в сутки (р):</div>
+          <div class="filter-title">Стоимость в сутки (р):</div>
           <div class="cost-value">
             <label>от 0
             <label>до 3000     
@@ -63,16 +63,16 @@
         </div>
       </form>
     <div class="search-results">
-      <div class="search">Найдено: 3</div>
-      <span>Сортировка</span>
+      <div class="found">Найдено: 3</div>
+      <span class="sort">Сортировка</span>
       <ul>
         <li>По цене</li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
       </ul>
       <div class="arrows">
-        <span class="arrow-up"></span>
-        <span class="arrow-down"></span>
+        <i class="arrow-up"></i>
+        <i class="arrow-down"></i>
       </div>
     </div>
     <div class="hotel-item">
@@ -80,7 +80,7 @@
         <img src="http://placehold.it/150x100">
       </div>
       <div class="hotel-middle-part">
-        <a href="#" class="reason">Amara Resort & SPA</a>
+        <a href="#" class="hotel-name">Amara Resort & SPA</a>
         <div class="hotel-info">
           <div class="hotel-info-part">
             Гостиница
@@ -102,7 +102,7 @@
         <img src="http://placehold.it/150x100">
       </div>
       <div class="hotel-middle-part">
-        <a href="#" class="reason">Desert Quail Inn</a>
+        <a href="#" class="hotel-name">Desert Quail Inn</a>
         <div class="hotel-info">
           <div class="hotel-info-part">
             Мотель
@@ -124,7 +124,7 @@
         <img src="http://placehold.it/150x100">
       </div>
       <div class="hotel-middle-part">
-        <a href="#" class="reason">Villas at Poco Diablo</a>
+        <a href="#" class="hotel-name">Villas at Poco Diablo</a>
         <div class="hotel-info">
           <div class="hotel-info-part">
             Апартаменты
