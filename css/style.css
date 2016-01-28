@@ -1,4 +1,42 @@
-html, body {
-	padding: 0;
-	margin: 0;
+body {
+	font: normal 14px "PT Sans Regular", "Arial", sans-serif;
+	line-height: 26px;
+	color: #333333;
+}
+
+.main-navigation a {
+	font: bold 14px "PT Sans Bold", "Arial", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 26px;
+	color: #000000;
+}
+
+.main-title {
+	font: bold 21px "PT Sans Bold", "Arial", sans-serif;
+	line-height: 26px;
+	color: #000000;
+}
+
+.causes-text {
+	background: #81b3d2;
+}
+
+.causes-title {
+	font: bold 21px "PT Sans Bold", "Arial", sans-serif;
+	line-height: 21px;
+}
+
+.interest {
+	font: bold 30px "PT Sans Bold", "Arial", sans-serif;
+	line-height: 24px;
+	color: #000000;
+}
+
+.hotel-name {
+	font: bold 21px "PT Sans Bold", "Arial", sans-serif;
+	line-height: 26px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
 }

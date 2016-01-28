@@ -10,7 +10,7 @@
     <header class="main-header">
       <div class="logo">
         <a href="index.html">
-          <img src="http://placehold.it/150x100">
+          <img src="img/logo.png" width="67" height="56" alt="Седона">
         </a>
       </div> 
       <nav class="main-navigation">
@@ -32,7 +32,7 @@
     </header>
 	<main class="index-main">
     <div class="index-welcome">
-      <img src="http://placehold.it/150x100">
+      <img src="img/main-shape.png" width="1200" height="57" alt="Декоративный элемент">
     </div>
     <h2 class="main-title">
       Седона - небольшой городок в Аризоне, заслуживающий большего!
@@ -53,7 +53,7 @@
         </p>
       </div>
       <div class="causes-img">
-        <img src="http://placehold.it/150x100" class="index-block-right">
+        <img src="img/image1.jpg" class="index-block-right" width="800" height="400" alt="улицы Седоны">
       </div>
     </div>
     <section class="service">
@@ -84,7 +84,7 @@
     </section>
     <div class="causes-item">
       <div class="causes-img">
-        <img src="http://placehold.it/150x100" class="index-block-left">
+        <img src="img/image2.jpg" class="index-block-left" width="800" height="400" alt="Мост Дьявола">
       </div>
       <div class="causes-text">
         <h2 class="causes-title">
@@ -142,6 +142,7 @@
       </p>
     </div>
     <div class="map">
+      <img src="img/map.jpg" width="1200" height="593" alt="Карта">
     </div>
 	</main>
 	<footer class="main-footer">
@@ -158,18 +159,50 @@
         <a href="https://htmlacademy.ru">HTML Academy</a>
       </section>
 	</footer>
+    <div class="application-form">
       <form class="application" action="https://echo.htmlacademy.ru" method="post">
-        <span class="reason application-title">Поиск гостиницы в Седоне</span>
-        <label for="arrival">Дата заезда:</label>
-          <input type="date" name="arrival date" id="arrival" value="24 апреля 2016">
-        <label for="departure">Дата выезда:</label>
-          <input type="date" name="departure date" id="departure" value="4 июля 2016">
-        <label for="adult">Взрослые:</label>
-          <input type="number" name="adult number" id="adult" min="0" value="2">
-        <label for="child">Дети:</label>
-          <input type="number" name="child number" id="child" min="0" value="0">
+        <span class="application-title">Поиск гостиницы в Седоне</span>
+        <div class="row">
+          <div class="column-left">
+            <label for="arrival">Дата заезда:</label>
+          </div>
+          <div class="column-right">
+            <i class="icon-calendar"></i>
+            <input type="date" name="arrival date" id="arrival" placeholder="24 апреля 2016">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-left">
+            <label for="departure">Дата выезда:</label>
+          </div>
+          <div class="column-right">
+            <i class="icon-calendar"></i>
+            <input type="date" name="departure date" id="departure" placeholder="4 июля 2016">
+          </div>
+        </div>
+        <div class="half-row">
+          <div class="people-left">
+            <label for="adult">Взрослые:</label>
+          </div>
+          <div class="counter-left">
+            <i class="icon-minus"></i>
+            <input type="number" name="adult number" id="adult" min="0" value="2">
+            <i class="icon-plus"></i>
+          </div>
+        </div>
+        <div class="half-row">
+          <div class="people-right">
+            <label for="child">Дети:</label>
+          </div>
+          <div class="counter-right">
+            <i class="icon-minus"></i>
+            <input type="number" name="child number" id="child" min="0" value="0">
+            <i class="icon-plus"></i>
+          </div>
+        </div>
         <button class="btn" type="submit">Найти</button>
       </form>
+    </div>
   </div>
 </body>
 </html>
