@@ -54,11 +54,19 @@
         <div class="cost">
           <div class="filter-title">Стоимость в сутки (р):</div>
           <div class="cost-value">
-            <label>от 0
-            <label>до 3000     
-              <input type="range" min="0" max="3000" step="100">
+            <label class="min-price">от 
+              <input type="text" name="min-price" value="0">
             </label>
+            <label class="max-price">до 
+              <input type="text" name="max-price" value="3000">
             </label>
+          </div>
+          <div class="cost-range">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
           </div>
           <button type="submit" class="btn-choice">Показать</button>
         </div>
@@ -72,8 +80,8 @@
         <li><a href="#">По рейтингу</a></li>
       </ul>
       <div class="arrows">
-        <i class="arrow-up"></i>
-        <i class="arrow-down"></i>
+        <span class="icon-up-dir"></span>
+        <span class="icon-down-dir"></span>
       </div>
     </div>
     <div class="hotel-item clearfix">
@@ -85,11 +93,11 @@
         <div class="hotel-info clearfix">
           <div class="hotel-info-part">
             Гостиница
-            <a href="#" class="more">Подробнее</a>
+            <a href="#" class="more"><span>Подробнее</span></a>
           </div>
           <div class="hotel-info-part">
             от 3500 р.
-            <a href="#" class="reserve">Забронировать</a>
+            <a href="#" class="reserve"><span>Забронировать</span></a>
           </div>
         </div>
       </div>
@@ -107,11 +115,11 @@
         <div class="hotel-info clearfix">
           <div class="hotel-info-part">
             Мотель
-            <a href="#" class="more">Подробнее</a>
+            <a href="#" class="more"><span>Подробнее</span></a>
           </div>
           <div class="hotel-info-part">
             от 2000 р.
-            <a href="#" class="reserve">Забронировать</a>
+            <a href="#" class="reserve"><span>Забронировать</span></a>
           </div>
         </div>
       </div>
@@ -129,11 +137,11 @@
         <div class="hotel-info">
           <div class="hotel-info-part clearfix">
             Апартаменты
-            <a href="#" class="more">Подробнее</a>
+            <a href="#" class="more"><span>Подробнее</span></a>
           </div>
           <div class="hotel-info-part">
             от 4000 р.
-            <a href="#" class="reserve">Забронировать</a>
+            <a href="#" class="reserve"><span>Забронировать</span></a>
           </div>
         </div>
       </div>
@@ -154,7 +162,7 @@
       </section>
       <section class="footer-copyright">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a href="https://htmlacademy.ru" class="copyright">HTML Academy</a>
       </section>
   </footer>
   </div>
