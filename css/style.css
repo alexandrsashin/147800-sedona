@@ -57,7 +57,7 @@
 
 body {
 	font: normal 14px "PT Sans", "Arial", sans-serif;
-	line-height: 26px;
+	line-height: 21px;
 	text-transform: uppercase;
 	
 	background: #eaeaea;
@@ -76,6 +76,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 
+	box-shadow: 0 0 15px rgba(0,1,1,0.2);
 	background: #fff;
 }
 
@@ -87,6 +88,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 50%;
+	z-index: 2;
 	transform: translate(-50%,0);
 }
 
@@ -101,11 +103,15 @@ body {
 .main-navigation li {
 	width: 20%;
 	display: inline-block;
-	padding: 15px 0;
+	padding: 14px 0 10px 0;
 
 	text-align: center;
 	vertical-align: top;
 }
+
+ .main-navigation li:nth-child(2) {
+ 	margin-right:20%;
+ }
 
 .main-navigation a {
 	font: bold 14px "PT Sans Bold", "Arial", sans-serif;
@@ -128,10 +134,10 @@ body {
 .index-welcome {
 	position: relative;
 
-	height: 510px;
+	height: 508px;
 
 	background: url("../img/main-picture.jpg") no-repeat;
-	background-position: 50% 20%;
+	background-position: 50% 21%;
 }
 
 .index-welcome img {
@@ -143,7 +149,7 @@ body {
 
 .main-title {
 	width: 575px;
-	margin: 60px auto 30px;
+	margin: 60px auto 27px;
 
 	font: bold 21px "PT Sans Bold", "Arial", sans-serif;
 	line-height: 26px;
@@ -154,7 +160,7 @@ body {
 }
 
 .after-main-title {
-	margin-bottom: 55px;
+	margin-bottom: 51px;
 
 	font: normal 14px "PT Sans", "Arial", sans-serif;
 	line-height: 26px;
@@ -165,14 +171,14 @@ body {
 }
 
 .causes-item {
-	height: 255px;
+	height: 256px;
 	overflow: hidden;
 	background: #81b3d2;
 	color: #fff;
 }
 
 .causes-text {
-	width: 34%;
+	width: 33.3333%;
 	float: left;
 	text-align: center;
 }
@@ -213,16 +219,9 @@ body {
 }
 
 .feedback {
-	padding-bottom: 135px;
-}
+	position: relative;
 
-.interest {
-	margin: 55px auto 35px;
-	font: bold 30px "PT Sans Bold", "Arial", sans-serif;
-	line-height: 24px;
-	text-transform: uppercase;
-	text-align: center;
-	color: #000000;
+	padding-bottom: 135px;
 }
 
 .feedback p {
@@ -234,10 +233,120 @@ body {
 	color: #333;
 }
 
+.interest {
+	margin: 55px auto 35px;
+	font: bold 30px "PT Sans Bold", "Arial", sans-serif;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+}
+
 .application {
+	position: absolute;
+	bottom: -395px;
+	left: 50%;
+	z-index: 100;
+	transform: translate(-50%,0);
+
 	width: 570px;
 	height: 480px;
-	border: 2px solid black;
+
+	background: #fff;
+}
+
+.column-left {
+	float: left;
+	width: 115px;
+	padding: 7px 0;
+}
+
+.column-right {
+	float: right;
+	width: 345px;
+}
+
+.row input {
+	width: 326px;
+	height: 34px;
+	padding-left: 15px;
+
+	background: #f2f2f2;
+	border: 2px solid #f2f2f2;
+}
+
+.row input:hover {
+	width: 326px;
+	height: 34px;
+	padding-left: 15px;
+
+	background: #ebebeb;
+	border: 2px solid #ebebeb;
+}
+
+.row input:active {
+	width: 326px;
+	height: 34px;
+	padding-left: 15px;
+
+	background: #fff;
+	border: 2px solid #e5e5e5;
+}
+
+.people-left{
+	float: left;
+	width: 112px;
+	padding: 7px 0;
+}
+
+.counter-left {
+	float: left;
+	width: 115px;
+	margin-right: 26px;
+}
+
+.counter-left input {
+	text-align: center;
+}
+
+.people-right {
+	float: left;
+	width: 92px;
+	padding: 7px 0;
+
+	text-align: center;
+}
+
+.counter-right {
+	float: right;
+	width: 115px;
+}
+
+.counter-right input {
+	text-align: center;
+}
+
+.half-row input {
+	width: 115px;
+	height: 38px;
+
+	background: #f2f2f2;
+	border: none;
+}
+
+.application label, .application input {
+	margin-bottom: 28px;
+
+	font: bold 14px "PT Sans Bold", "Arial", sans-serif;
+	line-height: 26px;
+	text-transform: uppercase;
+
+	color: #000;
+}
+
+.application-content {
+	box-shadow: 0 0 15px rgba(0,1,1,0.2);
+	padding: 55px;
 }
 
 .application-form-header {
@@ -255,9 +364,43 @@ body {
 	color: #fff;
 }
 
+.btn {
+	width: 100%;
+	margin-top: 25px;
+	padding: 14px 0;
+
+	font: bold 21px "PT Sans Bold", "Arial", sans-serif;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	background: #81b3d2;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: #669ec0;
+}
+
+.btn:active {
+	background: #5496bd;
+}
+
+.btn:active span {
+	color: #88b6d1;
+}
+
 .map {
 	height: 470px;
 	overflow: hidden;
+}
+
+.main-footer {
+	background: rgba(256,256,256,0.9);
 }
 
 .condition-choice {
@@ -271,8 +414,8 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
 	display: block;
-	margin-top: 30px;
-	line-height: 20px;
+	margin-top: 26px;
+	line-height: 21px;
 	padding-left: 40px;
 	position: relative;
 	cursor: pointer;
@@ -308,7 +451,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .filter-group {
 	width: 190px;
 	float: left;
-	padding: 30px 0 30px 6%;
+	padding: 27px 0 30px 6%;
 
 	font: normal 14px "PT Sans", "Arial", sans-serif;
 	line-height: 21px;
@@ -525,7 +668,8 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .arrows {
-	font-size: 18px;
+	font-size: 23px;
+	line-height: 20px;
 	text-align: right;
 
 	color: #000;
@@ -571,7 +715,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 	line-height: 26px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #000000;
+	color: #000;
 }
 
 .hotel-name:hover {
@@ -592,7 +736,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 	line-height: 21px;
 	text-transform: uppercase;
 
-	color: #000;
+	color: #333;
 }
 
 .more {
@@ -644,7 +788,8 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .stars span {
-	font-size: 18px;
+	font-size: 19px;
+	line-height: 21px;
 
 	color: #81b3d2;
 }
@@ -660,7 +805,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 	vertical-align: bottom;
 
 	background: #f2f2f2;
-	color: #000;
+	color: #666;
 }
 
 .footer-hashtag {
@@ -721,8 +866,17 @@ input[type="checkbox"]:checked:disabled + label::before {
 	text-align: center;
 }
 
+.footer-copyright p {
+	display: inline;
+
+	font: normal 14px "PT Sans", "Arial", sans-serif;
+	line-height: 26px;	
+
+	color: #000;
+}
+
 .copyright {
-	display: block;
+	display: inline-block;
 	width: 113px;
 	height: 39px;
 

@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="logo">
         <a href="index.html">
-          <img src="img/logo.png" width="67" height="56" alt="Седона">
+          <img src="img/logo.png" width="138" height="70" alt="Седона">
         </a>
       </div>
       <nav class="main-navigation">
@@ -36,7 +36,7 @@
       <img src="img/main-shape.png" width="1200" height="57" alt="Декоративный элемент">
     </div>
     <h2 class="main-title">
-      Седона - небольшой городок в Аризоне, заслуживающий большего!
+      Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!
     </h2>
     <p class="after-main-title">
       Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -47,7 +47,7 @@
           Настоящий городок
         </h2>
         <span class="number">
-          №1
+          &ndash; №1 &ndash;
         </span>
         <p>
           Седона - не аттракцион для туристов, там течет своя жизнь
@@ -92,7 +92,7 @@
           Там есть мост дьявола
         </h2>
         <span class="number">
-          №2
+          &ndash; №2 &ndash;
         </span>
         <p>
           Да, по нему можно пройти! Если конечно вы осмелитесь
@@ -105,7 +105,7 @@
           Небольшая площадь
         </h2>
         <span class="number">
-          №3
+          &ndash; №3 &ndash;
         </span>
         <p>
           Все достопримечательности находятся очень близко
@@ -116,7 +116,7 @@
           Красивая дорога
         </h2>
         <span class="number">
-          №4
+          &ndash; №4 &ndash;
         </span>
         <p>
           Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -127,7 +127,7 @@
           Мало туристов
         </h2>
         <span class="number">
-          №5
+          &ndash; №5 &ndash;
         </span>
         <p>
           Большинство едет в Гранд Каньон и толпится там
@@ -141,55 +141,56 @@
       <p>
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-    </div>
-    <div class="map">
-      <img src="img/map.jpg" width="1200" height="593" alt="Карта">
-    </div>
 
       <form class="application" action="https://echo.htmlacademy.ru" method="post">
         <div class="application-form-header">
           <span class="application-title">Поиск гостиницы в Седоне</span>
         </div>
-        <div class="row">
+        <div class="application-content">
+        <div class="row clearfix">
           <div class="column-left">
             <label for="arrival">Дата заезда:</label>
           </div>
           <div class="column-right">
-            <i class="icon-calendar"></i>
-            <input type="date" name="arrival date" id="arrival" placeholder="24 апреля 2016">
+            <!-- <i class="icon-calendar"></i> -->
+            <input type="text" name="arrival date" id="arrival" placeholder="24 апреля 2016">
           </div>
         </div>
-        <div class="row">
+        <div class="row clearfix">
           <div class="column-left">
             <label for="departure">Дата выезда:</label>
           </div>
           <div class="column-right">
-            <i class="icon-calendar"></i>
-            <input type="date" name="departure date" id="departure" placeholder="4 июля 2016">
+            <!-- <i class="icon-calendar"></i> -->
+            <input type="text" name="departure date" id="departure" placeholder="4 июля 2016">
           </div>
         </div>
-        <div class="half-row">
+        <div class="half-row clearfix">
           <div class="people-left">
             <label for="adult">Взрослые:</label>
           </div>
           <div class="counter-left">
-            <i class="icon-minus"></i>
-            <input type="number" name="adult number" id="adult" min="0" value="2">
-            <i class="icon-plus"></i>
+            <!--<i class="icon-minus"></i>-->
+            <input type="text" name="adult number" id="adult" min="0" value="2">
+            <!--<i class="icon-plus"></i>-->
           </div>
-        </div>
-        <div class="half-row">
           <div class="people-right">
             <label for="child">Дети:</label>
           </div>
           <div class="counter-right">
-            <i class="icon-minus"></i>
-            <input type="number" name="child number" id="child" min="0" value="0">
-            <i class="icon-plus"></i>
+            <!--<i class="icon-minus"></i>-->
+            <input type="text" name="child number" id="child" min="0" value="0">
+            <!--<i class="icon-plus"></i>-->
           </div>
         </div>
-        <button class="btn" type="submit">Найти</button>
+        <button class="btn" type="submit"><span>Найти</span></button>
+      </div>
       </form>
+
+    </div>
+    <div class="map">
+      <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+    </div>
 
 	</main>
 	<footer class="main-footer clearfix">
