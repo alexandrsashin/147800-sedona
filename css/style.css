@@ -317,8 +317,6 @@ body {
 	position: relative;
 
 	height: 593px;
-
-	background: url("../img/map.jpg") no-repeat;
 }
 
 .application {
@@ -477,6 +475,23 @@ body {
 
 	outline: none;
 }
+
+.application {
+	display: none;
+}
+
+.application-show {
+	display: block;
+	animation-name: appearance;
+	animation-duration: 1.5s;
+}
+
+@keyframes appearance {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
 
 .application label, .application input {
 	margin-bottom: 28px;
