@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Sedona. Каталог</title>
 </head>
 <body>
@@ -54,11 +54,11 @@
         <div class="cost">
           <div class="filter-title">Стоимость в сутки (р):</div>
           <div class="cost-value">
-            <label class="min-price">от 
-              <input type="text" name="min-price" value="0">
+            <label class="min-price" for="min-price">от 
+              <input type="text" name="min-price" id="min-price" value="0">
             </label>
-            <label class="max-price">до 
-              <input type="text" name="max-price" value="3000">
+            <label class="max-price" for="max-price">до 
+              <input type="text" name="max-price" id="max-price" value="3000">
             </label>
           </div>
           <div class="cost-range">
@@ -69,7 +69,7 @@
               <div class="range-toggle range-toggle-max"></div>
           </div>
           <button type="submit" class="btn-choice">Показать</button>
-        </div>
+        </div> 
       </form>
     <div class="search-results clearfix">
       <div class="found">Найдено: 3</div>

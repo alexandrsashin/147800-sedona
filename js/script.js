@@ -5,15 +5,20 @@ var departure = form.querySelector("[name=departure-date]");
 
 
 link.addEventListener("click", function(event) {
-	event.preventDefault();
-	form.classList.add("application-show");
-	arrival.focus();
+    if (form.classList.contains("application-show")) {
+        event.preventDefault();
+        form.classList.remove("application-show");
+    } else {
+	    event.preventDefault();
+        form.classList.add("application-show");
+        arrival.focus();
+    }
 });
 
 form.addEventListener("submit", function(event) {
     if (!arrival.value || !departure.value) {
     	event.preventDefault();
-        console.log("Нужно ввести логин и пароль"); 
+        console.log("Нужно ввести дату заезда и выезда"); 
     } 
 });
 

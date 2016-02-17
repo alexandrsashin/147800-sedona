@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
    	<meta charset="utf-8">
-    <link rel="stylesheet" href="css/normalize.css">
-   	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+   	<link rel="stylesheet" href="css/style.min.css">
    	<title>Sedona</title>
 </head>
 <body>
@@ -33,6 +33,7 @@
     </header>
 	<main>
     <div class="index-welcome">
+      <img src="img/sedona-main-words.png" class="sedona-logo" width="458" height="352" alt="Welcome to the gorgeous Sedona">
     </div>
     <h2 class="main-title">
       Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!
@@ -51,7 +52,7 @@
         </p>
       </div>
       <div class="causes-img">
-        <img src="img/image1.jpg" class="index-block-right" width="800" height="400" alt="улицы Седоны">
+        <img src="img/image1.jpg" class="causes-img-right" width="800" height="400" alt="улицы Седоны">
       </div>
     </div>
     <section class="clearfix">
@@ -68,7 +69,7 @@
           Еда
         </h2>
         <p>
-          Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+          Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!
         </p>
       </div>
       <div class="service-item">
@@ -82,7 +83,7 @@
     </section>
     <div class="causes-item clearfix">
       <div class="causes-img">
-        <img src="img/image2.jpg" class="index-block-left" width="800" height="400" alt="Мост Дьявола">
+        <img src="img/image2.jpg" class="causes-img-left" width="800" height="400" alt="Мост Дьявола">
       </div>
       <div class="causes-text">
         <h2 class="causes-title">
@@ -91,7 +92,7 @@
         <span class="number">
           &ndash; №2 &ndash;
         </span>
-        <p>
+        <p >
           Да, по нему можно пройти! <br> Если конечно вы осмелитесь
         </p>
       </div>
@@ -105,7 +106,7 @@
           &ndash; №3 &ndash;
         </span>
         <p>
-          Все достопримечательности находятся очень близко
+          Все достопримеча&shy;тельности находятся очень близко
         </p>
       </div>
       <div class="features-item">
@@ -138,11 +139,11 @@
       <p>
         Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a href="#" class="application-title">Поиск гостиницы в Седоне</a>
+      <a href="form.html" class="application-title">Поиск гостиницы в Седоне</a>
     </div>
     </main>
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838229.4131109946!2d-111.58768793259244!3d34.84784298563266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1455556507024" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838229.4131109946!2d-111.58768793259244!3d34.84784298563266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1455556507024"></iframe> 
       <form class="application" action="https://echo.htmlacademy.ru" method="post">
         <div class="application-content">
         <div class="row clearfix">
@@ -169,7 +170,7 @@
           </div>
           <div class="counter-left">
             <i class="icon-minus"></i>
-            <input type="text" name="adult-number" id="adult" min="0" value="2">
+            <input type="text" name="adult-number" id="adult" value="2">
             <i class="icon-plus"></i>
           </div>
           <div class="people-right">
@@ -177,7 +178,7 @@
           </div>
           <div class="counter-right">
             <i class="icon-minus"></i>
-            <input type="text" name="child-number" id="child" min="0" value="0">
+            <input type="text" name="child-number" id="child" value="0">
             <i class="icon-plus"></i>
           </div>
         </div>
@@ -202,6 +203,6 @@
     </footer>
   </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
